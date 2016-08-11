@@ -1,0 +1,178 @@
+/****************************
+         BASE LAYERS 
+*****************************/
+* {
+  list-style-type: none;
+}
+
+body {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/576663/stars_by_t1na4.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.panel,
+.panel panel-default {
+  background: #5C258D;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #5C258D, #4389A2);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #5C258D, #4389A2);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.purple {
+  background: #6441A5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #6441A5, #2a0845);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #6441A5, #2a0845);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.content-footer,
+.table-container {
+  background: #673AB7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #673AB7, #512DA8);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #673AB7, #512DA8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.content-footer {
+  color: azure;
+}
+
+.content-footer a {
+  color: azure;
+}
+
+/*****************************
+            HEADER            
+*****************************/
+li {
+  padding: 3px;
+}
+
+.tabs {
+  background-color: #75b5a9;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxes, .box1, .box2, .box3, .box4, .box5, .Offline, .Online, .AccountClosed {
+  display: block;
+  color: #fff;
+}
+
+.box1 {
+  background: #d4f2db;
+}
+
+.box2 {
+  background: #75b5a9;
+}
+
+.box4 {
+  background: #914d76;
+}
+
+.box5 {
+  background: #69353f;
+}
+
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  width: 100px;
+  width: 100px;
+  display: block;
+  background: #ccc;
+}
+
+.input, .error-input {
+  border-radius: 3px;
+  border: 4px solid #ddd;
+  color: #555;
+  font-size: 17px;
+  padding: 10px 20px;
+  display: inline-block;
+  outline: 0;
+}
+
+.error-input {
+  border: 4px solid #e74c3c;
+}
+
+.channel-image,
+.channel-name,
+.channel-game,
+.channel-showStatus {
+  display: block;
+  height: 50px;
+}
+
+#TwitchStream a {
+  color: #fff;
+}
+
+.iconsUsers {
+  width: 128px;
+}
+
+.Offline {
+  color: #fff;
+  background: #8E0E00;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #8E0E00, #1F1C18);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #8E0E00, #1F1C18);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.Online {
+  color: #fff;
+  background: #52c234;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #52c234, #061700);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #52c234, #061700);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.AccountClosed {
+  background: #d4f2db;
+  background: #FF4E50;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FF4E50, #F9D423);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FF4E50, #F9D423);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.table {
+  margin-bottom: 0px !important;
+}
+
+.imgDavid {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 10px;
+}

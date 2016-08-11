@@ -1,0 +1,207 @@
+$color1: #d4f2db; //rgba(212, 242, 219, 100)
+$color2: #75b5a9; //rgba(117, 181, 169, 100)
+$color3: #ba9790; //rgba(186, 151, 144, 100)
+$color4: #914d76; //rgba(145, 77, 118, 100)
+$color5: #69353f; //rgba(105, 53, 63, 100) 
+
+/****************************
+         BASE LAYERS 
+*****************************/
+
+* {
+  list-style-type: none;
+}
+
+body {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/576663/stars_by_t1na4.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.panel,
+.panel panel-default {
+  background: #5C258D;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #5C258D, #4389A2);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #5C258D, #4389A2);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.purple {
+  background: #6441A5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #6441A5, #2a0845);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #6441A5, #2a0845);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.content-footer,
+.table-container {
+  background: #673AB7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #673AB7, #512DA8);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #673AB7, #512DA8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.content-footer {
+  color: azure;
+}
+
+.content-footer a {
+  color: azure;
+}
+
+/*****************************
+            HEADER            
+*****************************/
+
+li {
+  padding: 3px;
+}
+
+.tabs {
+  background-color: #75b5a9;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxes {
+  display: block;
+  color: #fff;
+}
+
+.box1 {
+  @extend .boxes;
+  $color1: #d4f2db;
+  background: $color1;
+}
+
+.box2 {
+  @extend .boxes;
+  $color2: #75b5a9;
+  background: $color2;
+}
+
+.box3 {
+  @extend .boxes;
+  $color3: #ba9790;
+}
+
+.box4 {
+  @extend .boxes;
+  $color4: #914d76;
+  background: $color4;
+}
+
+.box5 {
+  @extend .boxes;
+  $color5: #69353f;
+  background: $color5;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.box {
+  @include border-radius(10px);
+  width: 100px;
+  width: 100px;
+  display: block;
+  background: #ccc;
+}
+
+.input {
+  border-radius: 3px;
+  border: 4px solid #ddd;
+  color: #555;
+  font-size: 17px;
+  padding: 10px 20px;
+  display: inline-block;
+  outline: 0;
+}
+
+.error-input {
+  @extend .input;
+  border: 4px solid #e74c3c;
+}
+
+.channel-image,
+.channel-name,
+.channel-game,
+.channel-showStatus {
+  display: block;
+  height: 50px;
+}
+
+#TwitchStream a {
+  color: #fff;
+}
+
+.iconsUsers {
+  width: 128px;
+}
+
+.Offline {
+  @extend .boxes;
+  color: #fff;  
+  background: #8E0E00;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #8E0E00, #1F1C18);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #8E0E00, #1F1C18);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.Online {
+  @extend .boxes;
+  color: #fff;  
+  background: #52c234;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #52c234, #061700);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #52c234, #061700);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.AccountClosed {
+  @extend .boxes;
+  background: $color1;
+  background: #FF4E50;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FF4E50, #F9D423);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FF4E50, #F9D423);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.table {
+  margin-bottom: 0px !important;
+}
+
+.imgDavid {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 10px;
+}
